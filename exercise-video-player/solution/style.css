@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+}
+
+video {
+    width: 700px;
+}
+
+
+#status-bar {
+    width: 700px;
+}
+
+button {
+    width: 230px;
+    font-size: 2em;
+}
+
+p#playing {
+    visibility: hidden;
+}
+
+.space {
+    margin-top: 10px;
+}
