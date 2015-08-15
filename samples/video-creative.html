@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2015 by evemh (http://jsbin.com/suviwez/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+  <head>
+<meta name="description" content="Working with Video - Effects">
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <title>Video Effects</title>
+  <style id="jsbin-css">
+body {
+  background-color: DarkCyan;
+  min-height: 100%;  
+  min-height: 100vh; 
+  display: flex;
+  align-items: center;
+}
+
+video {
+  opacity: .2;
+}
+
+.container {
+  border: solid 2px white;
+  color: white;
+}
+
+.more {
+  background-color: white;
+  color: DarkCyan;
+}
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: auto;
+    height: 100%;
+  }
+}
+</style>
+</head>
+  <body>
+    <div class="fullscreen-bg">
+      <video autoplay loop class="fullscreen-bg__video" type="video/mp4" src="http://www.moonhighway.com/class/assets/video/tree_clouds.mp4"></video>
+      <video autoplay loop class="fullscreen-bg__video" type="video/ogg" src="http://www.moonhighway.com/class/assets/video/tree_clouds.ogv"></video>
+    </div>
+
+    <div class="container">
+      <h1>Trees and Clouds</h1>
+      <p>Bacon ipsum dolor amet alcatra corned beef sirloin fatback, biltong cow pork belly. Chicken jerky pancetta prosciutto short loin, sirloin turducken shankle bresaola pastrami ham hock pork loin leberkas. Hamburger picanha shoulder short ribs. Prosciutto tri-tip meatball doner short ribs. Pig pork belly ground round, andouille pastrami strip steak tongue drumstick hamburger ribeye meatball venison. Leberkas doner pork chop hamburger capicola. Cow kielbasa bacon pork.</p>
+      <p>Bacon ipsum dolor amet alcatra corned beef sirloin fatback, biltong cow pork belly. Chicken jerky pancetta prosciutto short loin, sirloin turducken shankle bresaola pastrami ham hock pork loin leberkas.</p>
+
+      <div class="more">
+        <h1>My Artsy Site</h1>
+        <p>Bacon ipsum dolor amet alcatra corned beef sirloin fatback, biltong cow pork belly. Chicken jerky pancetta prosciutto short loin, sirloin turducken shankle bresaola pastrami ham hock pork loin leberkas. Hamburger picanha shoulder short ribs. Prosciutto tri-tip meatball doner short ribs. Pig pork belly ground round, andouille pastrami strip steak tongue drumstick hamburger ribeye meatball venison. Leberkas doner pork chop hamburger capicola. Cow kielbasa bacon pork.</p>
+        <p>Bacon ipsum dolor amet alcatra corned beef sirloin fatback, biltong cow pork belly. Chicken jerky pancetta prosciutto short loin, sirloin turducken shankle bresaola pastrami ham hock pork loin leberkas.</p>
+      </div>
+
+    </div>
+
+  </body>
+</html>

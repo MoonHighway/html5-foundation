@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2015 by moonhighway (http://jsbin.com/guwere/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+  <head>
+    <meta name="description" content="HTML5 - Audio Sample" />
+    <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no" />
+    <title>Audio Sample</title>
+  <style id="jsbin-css">
+html, body {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  max-width: 50%;
+  font-size: 3em;
+}
+
+
+
+
+</style>
+</head>
+
+  <body>
+
+    <audio id="biggerboat">
+      <source type="audio/mp3" src="http://www.moonhighway.com/class/assets/audio/biggerboat.mp3">
+      <source type="audio/ogg" src="http://www.moonhighway.com/class/assets/audio/biggerboat.ogg">
+    </audio>
+
+    <audio id="emergency">
+      <source type="audio/mp3" src="http://www.moonhighway.com/class/assets/audio/EmergencyAlert.mp3">
+      <source type="audio/ogg" src="http://www.moonhighway.com/class/assets/audio/EmergencyAlert.ogg">
+    </audio>
+
+    <button id="never">Do not click this button ever!</button>
+
+  <script id="jsbin-javascript">
+var sndEmergency = document.getElementById('emergency');
+var sndBiggerBoat = document.getElementById('biggerboat');
+var btn = document.getElementById('never');
+
+btn.onclick = function() {
+  if (this.innerHTML === "STOP STOP STOP") {
+    sndEmergency.pause();
+    sndEmergency.currentTime = 0;
+    btn.innerHTML = "Do not click this button Ever!";
+    btn.disabled = false;
+    document.body.style.backgroundColor = 'white';
+    document.body.style.color = 'black';
+  } else {
+    sndBiggerBoat.play();
+    btn.innerHTML = "What have you done?";
+    btn.disabled = true;
+  }
+};
+
+sndBiggerBoat.onended = function() {
+  btn.innerHTML = "STOP STOP STOP";
+  btn.disabled = false;
+  sndEmergency.play();
+  document.body.style.backgroundColor = 'red';
+  document.body.style.color = 'white';
+};
+</script>
+</body>
+</html>

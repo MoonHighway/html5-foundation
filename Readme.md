@@ -24,7 +24,7 @@ Topics
 
 * [First Video](http://jsbin.com/tukegu/1/edit?html,output)
 * [Creative Video](http://jsbin.com/suviwez/1/edit?html,output)
-* [Can I use](http://www.canisue.com)
+* [Can I use](http://www.caniuse.com)
 * [Audio Sample Song](http://jsbin.com/guwere/1/edit?html,output)
 * [Media API](http://www.w3.org/2010/05/video/mediaevents.html)
 * [Audio Samples API](http://jsbin.com/guwere/2/edit?html,output)
