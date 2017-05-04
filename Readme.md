@@ -1,7 +1,7 @@
 HTML5 Foundation
 =================
 This course introduces developers to the latest version of the Hypertext Markup Language.  This course looks at HTML by 
-focusing on SEO considerations, Accessibility Issues, and mobile web development.
+focusing on SEO considerations, accessibility issues, and mobile web development.
 
 Topics
 -------
